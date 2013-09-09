@@ -67,13 +67,15 @@
    
 $textGray: #9b9896; 
 $placeGray: #585858;
+$graySocial: #a3a19e;
 $lightBlue: #6aa3b4;
 /* ============================= 
          Major Structural Styles
    ============================= */
 html {background: #1A1A1A}
 
-html, body, .background {height: 100%;width: 100%;margin:0; padding:0;}
+html, body, .background {height: 100%;width: 100%;margin:0; padding:0;background: url('../images/patterns/dimension.png');}
+
 
 /* ============================= 
          Typography Styles
@@ -110,6 +112,16 @@ width: 100%;
 height: 100%;
 background: rgba(0,0,0,.0) url('../images/patterns/dimension.png');
 z-index: -1;}
+
+#background-pattern-three {position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+min-height:420px;
+height:auto !important;        /* for IE as it does not support min-height */
+height:420px;                   /* for IE as it does not support min-height */
+background: rgba(0,0,0,.001) url('../images/patterns/bkg-pattern-2.png');
+z-index: 2;}
 
 .main {position: relative;z-index: 3;
 min-height:536px;
@@ -200,6 +212,8 @@ transition: background .4s ease-in;
 .specialGrid {color: white;background:  rgba(0,0,0,.6);	border-radius: 10px;text-align: center;margin-top: 14%;padding: 2%}
 .specialGrid p {margin-bottom: 0;font-weight: 100}
 
+.row .row {margin-left:0;margin-right:0}
+
 /* ============================= 
          Page Styles
    ============================= */
@@ -248,20 +262,72 @@ overflow: hidden
 .postBody p {text-align: left;padding-left: .9375em;margin-bottom: .2em}
 
 .linkMore {float: right}
+
+/* ============================= 
+         Profile Page Styles
+   ============================= */
+
+.coverSlide {width: 100%;
+min-height:420px;
+height:auto !important;        /* for IE as it does not support min-height */
+height:420px;                   /* for IE as it does not support min-height */	
+display: block;
+margin-top: -45px}
+
+.leftProfile {width: 100%;height: 88%;margin:0;z-index: 19;margin-top: -163px;position: absolute;overflow: hidden;text-align: left}
+
+.leftProfile p {text-align: left}
+
+.profile {background: white;height: 108%;z-index: 9;margin-top: -163px;position: absolute;margin:0;}
+
+.eventBlock {width: 100%;
+position: relative;
+display: block;
+height: 60px;
+margin-top: -45px;
+z-index: 10;
+float: right
+}
+
+.socialShare {background: rgba(255,255,255,.75);
+width: 100%;display: block;height:45px}
+
+.socialList {float: right}
+
+.eye {font-size: 38px}
+
+.socialList li {font-family: 'socialicoregular'; color: $graySocial;font-size: 32px;text-transform: uppercase;border-left: 1px solid white}
+
+.socialShare .inline-list > li {padding-right: .5em;padding-left: .5em;margin-left: 0}
+
+.profileGrid li {margin-top: 20px}
+
+.num {font-family: 'klinic_slabmedium';color: #2ba6cb}
+.numImg {font-size: 48px}
+.profileGri {font-size: 18px}
+.inline-list > li > * {display: inline-block}
+.profileGri {text-align: center;margin-top: -16px;margin-bottom: 14px}
+.profileGrid .inline-list > li {margin-left: .5em}
+.hel {font-size: 9px;color: gray}
+.para p {font-size: 14px;line-height: 1.2em;font-weight: 300}
+.contactBar .side-nav li {margin-bottom: 1.25em;line-height: 20px;}
+.contactBar .side-nav li a {font-family: 'entypo';font-size: 34px;margin-bottom: .5em}
+.sid {list-style-position: inside;list-style-type: circle;margin-left: 20px}
+.fb {position: absolute;right: 10px;bottom: 55px}
 /* ============================= 
          Footer Styles
    ============================= */
 
 .footer {
-position: absolute;
+position: fixed;
 left: 0;
-bottom: 0;
+bottom: 0px;
 width: 100%;
 min-height:36px;
 height:auto !important;        /* for IE as it does not support min-height */
 height:36px;                   /* for IE as it does not support min-height */
 line-height: 36px;
-z-index: 10;
+z-index: 20;
 padding-top: 6px;
 background: rgba(7,7,7,1);}
 .copyright {float:left;display:inline-block}
@@ -316,6 +382,25 @@ font-size: 18px;
 margin-bottom: 0
 }
 
+.buttonB {
+	background: rgb(150,214,228); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(150,214,228,1) 0%, rgba(45,173,201,1) 3%, rgba(40,170,200,1) 6%, rgba(37,169,199,1) 11%, rgba(7,155,190,1) 40%, rgba(1,153,188,1) 49%, rgba(0,109,153,1) 97%, rgba(30,114,140,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(150,214,228,1)), color-stop(3%,rgba(45,173,201,1)), color-stop(6%,rgba(40,170,200,1)), color-stop(11%,rgba(37,169,199,1)), color-stop(40%,rgba(7,155,190,1)), color-stop(49%,rgba(1,153,188,1)), color-stop(97%,rgba(0,109,153,1)), color-stop(100%,rgba(30,114,140,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(150,214,228,1) 0%,rgba(45,173,201,1) 3%,rgba(40,170,200,1) 6%,rgba(37,169,199,1) 11%,rgba(7,155,190,1) 40%,rgba(1,153,188,1) 49%,rgba(0,109,153,1) 97%,rgba(30,114,140,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(150,214,228,1) 0%,rgba(45,173,201,1) 3%,rgba(40,170,200,1) 6%,rgba(37,169,199,1) 11%,rgba(7,155,190,1) 40%,rgba(1,153,188,1) 49%,rgba(0,109,153,1) 97%,rgba(30,114,140,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(150,214,228,1) 0%,rgba(45,173,201,1) 3%,rgba(40,170,200,1) 6%,rgba(37,169,199,1) 11%,rgba(7,155,190,1) 40%,rgba(1,153,188,1) 49%,rgba(0,109,153,1) 97%,rgba(30,114,140,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(150,214,228,1) 0%,rgba(45,173,201,1) 3%,rgba(40,170,200,1) 6%,rgba(37,169,199,1) 11%,rgba(7,155,190,1) 40%,rgba(1,153,188,1) 49%,rgba(0,109,153,1) 97%,rgba(30,114,140,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d6e4', endColorstr='#1e728c',GradientType=0 ); /* IE6-9 */
+
+border:none;
+-webkit-border-radius: 4px;
+border-radius: 4px;	
+font-weight: 300;
+font-family: 'klinic_slabmedium','helvetica neue', helvetica,sans-serif;
+font-size: 18px;
+margin-bottom: 0	
+}
+
 .prefix {height: 2.25em}
 /* ============================= 
          Media Queries
@@ -344,7 +429,7 @@ $portrait: "only screen and (orientation: portrait)";
 /* Used to alter styles for screens at max 768px wide. This is where the grid changes. */
 @media #{$max-small} {
 .copyright,.footer .inline-list {width: 100%;display: block;text-align: center;float: none}
-.footmenu {margin-left: auto;margin-right: auto;float: none !important;position: relative;width: 100%;display: inline-block;margin-left: 14%}
+.footmenu {margin-left: auto;margin-right: auto;float: none !important;position: relative;width: 100%;display: inline-block;}
 .helpGridInner {min-height:96px;height:auto !important;height:96px;}
 .pad {padding-top: 20px}
 #megaMenu ul.megaMenu > li#menu-item-31 > a {display:none}
@@ -412,9 +497,6 @@ bottom: 10%;}
 
 }
 
-
-
-
 @font-face {
     font-family: 'klinic_slablight';
     src: url('../fonts/klinicslablight.eot');
@@ -427,9 +509,6 @@ bottom: 10%;}
 
 }
 
-
-
-
 @font-face {
     font-family: 'klinic_slabbold';
     src: url('../fonts/klinicslabbold.eot');
@@ -437,6 +516,18 @@ bottom: 10%;}
          url('../fonts/klinicslabbold.woff') format('woff'),
          url('../fonts/klinicslabbold.ttf') format('truetype'),
          url('../fonts/klinicslabbold.svg#klinic_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../fonts/socialico-webfont.eot');
+    src: url('../fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socialico-webfont.woff') format('woff'),
+         url('../fonts/socialico-webfont.ttf') format('truetype'),
+         url('../fonts/socialico-webfont.svg#socialicoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

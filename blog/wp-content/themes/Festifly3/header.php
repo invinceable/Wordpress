@@ -29,8 +29,8 @@
 
 		<div class="background">
 
-			<div class="row">
-			<div class="columns small-24">
+			<div class="row" style="margin-right0;margin-left:0;max-width:100%">
+			<div class="">
 									<?php wp_nav_menu( array('theme_location' => 'Header' )); ?>			
 			</div>
 			</div>

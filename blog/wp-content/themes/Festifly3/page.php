@@ -107,4 +107,4 @@
 	
 </div>
 
-<?php get_template_part('page-footer'); ?>
+<?php get_footer(); ?>
