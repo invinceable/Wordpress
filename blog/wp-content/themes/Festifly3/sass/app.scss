@@ -60,6 +60,11 @@
 
 // Compass Mixins
 @import "compass/css3/text-shadow";
+@import "compass/layout/sticky-footer";
+@import "compass/layout/stretching";
+
+@include sticky-footer(36px, "#root", "#root_footer", "#footer");
+@include sticky-footer(36px, "#root", "#root_footer", "#footer-profile");
 
 /* ============================= 
          Color Styles
@@ -80,7 +85,7 @@ html, body, .background {height: 100%;width: 100%;margin:0; padding:0;background
 /* ============================= 
          Typography Styles
    ============================= */
-
+.reveal-modal h2, .reveal-modal p {color: white}
 .main h1, .main h2,.main h3, .main h4, .main h5, .main h6 {font-family: 'klinic_slabbold',serif} 
 
 h3.postTitle {font-family: 'helvetica neue',helvetica;font-weight: 100;display: inline-block;float: left;padding-top: 3px }
@@ -100,8 +105,7 @@ p {font-family: 'helvetica neue',helvetica,sans-serif;text-align: center;font-we
 top: 0;
 left: 0;
 width: 100%;
-height: 100%;
-background: rgba(0,0,0,.2) url('../images/patterns/bkg-pattern.png');
+background: rgba(0,0,0,.05) url('../images/patterns/bkg-pattern.png');
 background-size: 2px 2px;
 z-index: 2;}
 
@@ -109,7 +113,6 @@ z-index: 2;}
 top: 0;
 left: 0;
 width: 100%;
-height: 100%;
 background: rgba(0,0,0,.0) url('../images/patterns/dimension.png');
 z-index: -1;}
 
@@ -130,19 +133,16 @@ height:536px;                   /* for IE as it does not support min-height */
 margin-bottom: 5%;
 overflow: hidden}
 
-.callout {text-align:center;margin-top: 20%}
+.callout {text-align:center;margin-top: 200px}
 
 .callout h1, .callout h5 {margin-bottom: .1em}
 
 .signUp {padding-top: 4%}
 
-.infoGrid {min-height:216px;
-height:auto !important;        /* for IE as it does not support min-height */
-height:216px;                   /* for IE as it does not support min-height */
+.infoGrid {
 position: absolute;
-bottom: 3%;
-left: 0;
-z-index: 50}
+bottom: 5%
+}
 
 .helpGrid {position: relative;float: left}
 
@@ -223,12 +223,10 @@ transition: background .4s ease-in;
 .sideCol, .mainCol {background: rgba(0,0,0,.0) url('../images/patterns/dimension.png');padding-top: 6%}
 
 .sideCol {
-min-height: 100%;
 background: white;
-margin: auto}
+}
 
 .mainCol {
-min-height: 100%;
 margin: auto;
 padding-bottom: 20%}
 
@@ -272,11 +270,15 @@ min-height:420px;
 height:auto !important;        /* for IE as it does not support min-height */
 height:420px;                   /* for IE as it does not support min-height */	
 display: block;
-margin-top: -45px}
+margin-top: -45px;
+z-index: 20}
 
-.leftProfile {width: 100%;height: 88%;margin:0;z-index: 19;margin-top: -163px;position: absolute;overflow: hidden;text-align: left}
+.specialRow {display: block;display: block;position: absolute;left:0;z-index: 1}
+.specialLeft {background: white;display: block;height: 100%}
 
-.leftProfile p {text-align: left}
+.left {margin:0;z-index: 19;margin-top: -163px;padding-left:0;background: white}
+
+.left p {text-align: left}
 
 .profile {background: white;height: 108%;z-index: 9;margin-top: -163px;position: absolute;margin:0;}
 
@@ -318,10 +320,14 @@ width: 100%;display: block;height:45px}
          Footer Styles
    ============================= */
 
+#stretch-y {
+  @extend .stretched;
+  @include stretch-y; 
+  z-index: 18}
+  
+  
 .footer {
-position: fixed;
-left: 0;
-bottom: 0px;
+position: relative;
 width: 100%;
 min-height:36px;
 height:auto !important;        /* for IE as it does not support min-height */

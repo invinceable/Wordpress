@@ -33,14 +33,9 @@ function foundation_js(){
     wp_register_script( 'drop_js', get_template_directory_uri() . '/javascripts/foundation/foundation.dropdown.js' ); 
     wp_enqueue_script( 'drop_js', 'jQuery', '','', true );  
 
-    wp_register_script( 'abide_js', get_template_directory_uri() . '/javascripts/foundation/foundation.abide.js' ); 
-    wp_enqueue_script( 'abide_js', 'jQuery', '','', true );  
 
-    wp_register_script( 'tool_js', get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js' ); 
-    wp_enqueue_script( 'tool_js', 'jQuery', '','', true );  
-
-    wp_register_script( 'tool_js', get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js' ); 
-    wp_enqueue_script( 'tool_js', 'jQuery', '','', true );  
+    wp_register_script( 'reveal_js', get_template_directory_uri() . '/javascripts/foundation/foundation.reveal.js' ); 
+    wp_enqueue_script( 'reveal_js', 'jQuery', '','', true );  
 
     wp_register_script( 'bgScreen_js', get_template_directory_uri() . '/javascripts/jquery.backstretch.min.js' ); 
     wp_enqueue_script( 'bgScreen_js', 'jQuery', '','', true );  

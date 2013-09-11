@@ -27,7 +27,6 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<div class="background">
 			<div id="root">
 			<div class="row" style="margin-right0;margin-left:0;max-width:100%">
 			<div class="">

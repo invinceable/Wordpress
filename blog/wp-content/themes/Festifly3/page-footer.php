@@ -1,3 +1,6 @@
+		<div id="footer">
+		
+
 		<div class="footer">
 		
 			<div class="row" style="max-width:100%">
@@ -6,12 +9,12 @@
 			</div>
 		
 		</div>
-
-		
+		</div>
 
 </div>
 
   <?php wp_footer(); ?>
   		
+				 
 </body>
 </html>

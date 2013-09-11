@@ -994,7 +994,7 @@ $form-spacing: emCalc(22);
 
 // We use these to control the style of the modal itself.
 
-// $reveal-modal-bg: #fff;
+$reveal-modal-bg: rgba(#000, .85);
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: emCalc(20);
@@ -1005,14 +1005,14 @@ $form-spacing: emCalc(22);
 // $reveal-close-font-size: emCalc(22);
 // $reveal-close-top: emCalc(8);
 // $reveal-close-side: emCalc(11);
-// $reveal-close-color: #aaa;
+$reveal-close-color: #fff;
 // $reveal-close-weight: bold;
 
 // We use these to control the modal border
 
 // $reveal-border-style: solid;
 // $reveal-border-width: 1px;
-// $reveal-border-color: #666;
+$reveal-border-color: #000;
 
 // $reveal-modal-class: "reveal-modal";
 // $close-reveal-modal-class: "close-reveal-modal";

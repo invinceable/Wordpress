@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div id="background-pattern-three"></div>
 
-<div class="coverSlide">
+<div class="coverSlide" style="z-index:20">
 	
 	<div class="fb">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg">
@@ -16,10 +16,16 @@ get_header(); ?>
 	
 </div>
 
-<div class="row leftProfile" style="margin-left:0;margin-right:auto;padding-left:0">
+<div id="stretch-y" class="row specialRow" style="max-width:100%;z-index:1;margin-top:273px">
+	<div class="small-24 medium-12 large-12 specialLeft" style="z-index:2">
+	</div>
+</div>
 
-	<div class="profile small-24 medium-14 large-14 columns">
-	<div class="row" style="margin-top:20px;padding-right:0">
+<div class="row" style="max-width:100%">
+
+	<div class="small-24 medium-24 large-12 columns left">
+	
+	<div class="row" style="margin-top:20px;padding-right:0;max-width:100%">
 		<div class="small-24 medium-12 large-12 columns" style="padding-right:0">
 		<div class="small-5 columns" style="padding-right:0;padding-left:0"> 
 		<img src="<?php echo get_template_directory_uri(); ?>/images/profileThumb.jpg">
@@ -44,7 +50,7 @@ get_header(); ?>
 <a href="#" class="expand button buttonB">Connect with Trang and Thuy</a>
 	</div>
 	</div>
-		<div class="row">
+		<div class="row" style="max-width:100%">
 		<div class="small-21 columns para">
 		<p>We are: dreamers, artists and perfectionists!</p>
 
@@ -69,7 +75,7 @@ Our families , Our friends, Clean lines modern elegance design</p>
 			</ul>
 		</div>
 
-		<div class="row">
+		<div class="row" style="max-width:100%">
 		<div class="small-24 columns para">
 		<h6>Collaborating service providers</h6>
 		<ul class="sid">
@@ -80,7 +86,7 @@ Our families , Our friends, Clean lines modern elegance design</p>
 		</div>
 		</div>
 
-		<div class="row">
+		<div class="row"style="max-width:100%">
 		<div class="small-24 columns para">
 		<h6>Services Offered </h6>
 		
@@ -90,13 +96,27 @@ Our families , Our friends, Clean lines modern elegance design</p>
 		</div>
 		
 				
+	</div>	
+	
+		<div class="row show-for-small" style="max-width:100%">
+			<div class="small-24 columns">
+		<h4>Events (14)</h4>
+		
+			<ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-2 profileGrid">
+			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
+			</ul>
+			</div>
+		</div>
+
+	
 	</div>
-	</div>
 
-</div>
-
-
-<div class="eventBlock">
+	<div class="small-24 medium-24 large-12 columns right" style="padding-left:0;padding-right:0;">
+	
+	<div class="eventBlock hide-for-small">
 	
 		<div class="socialShare">
 		<ul class="inline-list socialList" style="float:right">
@@ -113,11 +133,11 @@ Our families , Our friends, Clean lines modern elegance design</p>
 		
 </div>		
 
-		<div class="row" style="float:right;margin-right:0">
-			<div class="small-24 medium-16 large-20 columns" style="float:right">
+<div class="row hide-for-small" style="max-width:100%">
+			<div class="small-23 small-offset-1 columns">
 		<h4>Events (14)</h4>
 		
-			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 profileGrid">
+			<ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-2 profileGrid">
 			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
 			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
 			<li><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg"></li>
@@ -126,4 +146,11 @@ Our families , Our friends, Clean lines modern elegance design</p>
 			</div>
 		</div>
 	
+	</div>
+
+</div>
+
+<div id="root_footer"></div>
+
+</div>
 <?php get_template_part('profile-footer'); ?>
