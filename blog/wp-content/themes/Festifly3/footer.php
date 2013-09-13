@@ -97,30 +97,28 @@
 			"<?php bloginfo('template_url');?>/images/background/bannerimage3.jpg",
 			"<?php bloginfo('template_url');?>/images/background/bannerimage4.jpg",
 			"<?php bloginfo('template_url');?>/images/background/bannerimage5.jpg",
-			"<?php bloginfo('template_url');?>/images/background/bannerimage6.jpg"
+			"<?php bloginfo('template_url');?>/images/background/bannerimage6.jpg",
+ 			"<?php bloginfo('template_url');?>/images/background/challncourtgotlight.png"
 			], {duration: 3000, fade: 750});
 			
 		</script>
 
 
-<div id="myModal" class="reveal-modal">
-  <h2>Awesome. I have it.</h2>
-  <p class="lead">Your couch.  It is mine.</p>
-  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+<div id="myModal" class="reveal-modal small">
+  <h2>Find the Right Match</h2>
+  <p>Festif.ly has created search & filter capabilities to help the right precise service or product match for your event. We understand that when you’re searching on Google for “SF Wedding Photographer” you really mean “SF Photographer with expertise in black & white galas & flair for vintage appeal”.  </p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
-<div id="myModal2" class="reveal-modal">
-  <h2>Awesome. I have it.</h2>
-  <p class="lead">Your couch. 1 It is mine.</p>
-  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+<div id="myModal2" class="reveal-modal small">
+  <h2>Get Inspired</h2>
+  <p>Browse the Festiv.ly events database curated by our network of  top event planners & designers, creative artists, top tier service providers and event professionals around the world.   </p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
-<div id="myModal3" class="reveal-modal">
-  <h2>Awesome. I have it.</h2>
-  <p class="lead">Your couch.  It is mine.</p>
-  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+<div id="myModal3" class="reveal-modal small">
+  <h2>Dedicated Community</h2>
+  <p>Need to plan a big event? Tight on time and resources? Our passionate community of event professionals from around the world is here to help. </p>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 				 
