@@ -22,10 +22,10 @@ define('DB_NAME', 'blog');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'gofestifly');
+define('DB_PASSWORD', 'getrich168');
 
 /** MySQL hostname */
-define('127.0.0.1', 'localhost');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
